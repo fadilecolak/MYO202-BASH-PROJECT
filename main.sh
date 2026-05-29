@@ -47,3 +47,15 @@ gpg --batch --yes --passphrase "$PAROLA" -c --cipher-algo AES256 report.log
 rm report.log
 
 echo "Sifreleme tamamlandi."
+
+echo "=== TXT DOSYALARI ===" >> $LOG_FILE
+find . -name "*.txt" >> $LOG_FILE
+
+echo "=== ILK 5 SATIR ===" >> $LOG_FILE
+head -5 main.sh >> $LOG_FILE
+
+echo "=== SON 5 SATIR ===" >> $LOG_FILE
+tail -5 main.sh >> $LOG_FILE
+
+echo "=== PIPE ORNEGI ===" >> $LOG_FILE
+type main.sh | sort | uniq >> $LOG_FILE
