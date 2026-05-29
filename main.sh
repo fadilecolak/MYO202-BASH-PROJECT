@@ -2,7 +2,7 @@
 
 # Fadile Çolak
 
-# 242017040
+# 2420171040
 
 # https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=pKmhqJpL64
 
